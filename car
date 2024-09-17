@@ -1,0 +1,30 @@
+package datatype;
+
+public class Car {
+	String model;
+	int year;
+	String color;
+	
+	public Car(String model,int year,String color) {
+		this.model = model;
+		this.year = year;
+		this.color = color;
+		
+	}
+	void displayInfo() {
+		System.out.println("car model is :"+model);
+		System.out.println("Year :"+year);
+		
+		System.out.println("color : " +color);
+		System.out.println("\n\n");
+	}
+	public static void main(String[] args) {
+		Car car1 =new Car("Hero", 2024, "Blue");
+		Car car2 =new Car("Hero", 2022, "Black");
+		car1.displayInfo();
+		car1.displayInfo();
+				
+		
+	}
+
+}
